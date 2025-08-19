@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Demo</title>
+    <style>
+        /* 1rem=16x */
+        :root{
+            font-size: 30px; 
+        }
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .px-box{
+            width: 200px;
+            height: 100px;
+            margin-bottom: 16px;
+            background-color: rgb(51, 4, 95);
+            color: white;
+        }
+        .container{
+            width: 600px;
+            border: 1px solid black;
+            padding: 15px;
+            background-color: rgb(191, 218, 71);
+                   }
+         .percentage-box{
+            width: 90%;
+            height: 50px;
+            background-color: rgb(184, 6, 6);
+            color: white;
+            margin-bottom: 15px;
+         }  
+         .em-box{
+            font-size: 1.5em;
+            padding: 1em;
+            background: rgb(59, 3, 12);
+            color: white;
+            width: 20em;
+            margin-bottom: 15px;
+         } 
+         .rem-box{
+            font-size: 1.2rem;
+            padding: 1em;
+            width: 25rem;
+            background-color: rgb(25, 133, 97);
+            color: black;
+         }
+        
+    </style>
+</head>
+<body>
+    <h2>CSS Units Demondtration</h2>
+    <div class="px-box">Fixed Size Using <strong>px</strong></div>
+
+    <div class="container">
+     <div class="percentage-box"> Width set to <strong>80%</strong> of conainer (400px)</div>
+    </div>
+
+    <div class="em-box">Relative size using <strong>em</strong>1.5em Text, 1em padding</div>
+
+    <div class="rem-box">Relative Size Using <strong>rem</strong>1.2rem Text, 1em padding</div>
+</body>
+</html>

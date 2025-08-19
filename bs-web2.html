@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+         :root {
+        --primary-dark: #a70391; /* Deep Midnight Blue */
+        --secondary-dark: #e928cf; /* Dark Slate Gray */
+        --accent-bold: #3d0802; /* Alizarin Crimson (Bold Red) */
+        --text-light: #ecf0f1; /* Clouds (Light Gray) */
+        --text-muted: #ffffff; /* Silver (Muted Gray) */
+        --footer-dark: #690a59; /* Even darker blue for footer */
+        /* --red-dark: */
+      }
+
+      body {
+        background-color: var(--text-light);
+        color: var(--primary-dark);
+        font-family: "Arial", sans-serif;
+      }
+
+      .navbar {
+        background-color: var(--primary-dark);
+        border-bottom: 3px solid var(--accent-bold); /* Bold accent line */
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: var(--text-light) !important;
+        font-weight: bold;
+      }
+
+      .navbar-brand:hover,
+      .nav-link:hover {
+        color: var(--accent-bold) !important;
+      }
+
+      .header-section {
+        background-color: var(--secondary-dark);
+        color: var(--text-light);
+        padding: 80px 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .header-section h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        color: var(--accent-bold);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .header-section p {
+        font-size: 1.2rem;
+        color: var(--text-muted);
+      }
+
+      main {
+        padding: 40px 0;
+      }
+
+      .section-heading {
+        color: var(--primary-dark);
+        margin-bottom: 30px;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .section-heading::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 80px;
+        height: 4px;
+        background-color: var(--accent-bold);
+      }
+
+      .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-header {
+        background-color: var(--primary-dark);
+        color: var(--text-light);
+        font-weight: bold;
+      }
+
+      .card-body {
+        color: var(--secondary-dark);
+      }
+
+      footer {
+        background-color: var(--footer-dark);
+        color: var(--text-muted);
+        padding: 40px 0;
+        margin-top: 50px;
+        font-size: 0.9rem;
+      }
+
+      footer a {
+        color: var(--accent-bold);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: var(--text-light);
+      }
+    </style>
+</head>
+<body>
+     <body>
+    <header class="header-section">
+      <div class="container">
+        <h1>Welcome to Our Beauty Platform</h1>
+        <p class="lead">
+          Beauty that speaks volumes. Be fierce. Be flawless. Be you."
+        </p>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Your Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#makeup">Makeup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#haircare">Hair Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skincare">Skincare</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+       <div class="container">
+        <section id="about" class="mb-5">
+          <h2 class="section-heading">About Us</h2>
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <p>
+             Unleash your inner artist with makeup that empowers and inspires.
+              Our products blend innovation with elegance for flawless results.
+              From everyday neutrals to runway-ready glam, we’ve got you covered.
+              Beauty begins with confidence—and we help you glow from within.
+              </p>
+              <p>
+                With years of experience in the Makeup  industry, we have a deep
+                understanding of market trends and the expertise to tackle
+                complex challenges effectively.
+              </p>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <img
+                src="makeup.jpg"
+                class="img-fluid rounded shadow-sm"
+                alt="About Us Image"
+              />
+            </div>
+          </div>
+        </section>
+
+         <hr class="my-5" />
+
+<section id="makeup" class="mb-5">
+  <h2 class="section-heading">Makeup Products</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-header">Foundation</div>
+        <div class="card-body">
+          <p class="card-text">
+            Smooth and flawless coverage for all skin types, available in a wide range of shades.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-header">Lipstick</div>
+        <div class="card-body">
+          <p class="card-text">
+            Rich, long-lasting colors to suit every mood and occasion—from matte to glossy finishes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-header">Eyeshadow Palette</div>
+        <div class="card-body">
+          <p class="card-text">
+            Vibrant and blendable shades for creating subtle to dramatic eye looks.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-header">Mascara</div>
+        <div class="card-body">
+          <p class="card-text">
+            Volumizing and lengthening formulas to enhance your lashes with every swipe.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-header">Blush</div>
+        <div class="card-body">
+          <p class="card-text">
+            Add a natural flush to your cheeks with soft, buildable pigments.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-header">Setting Spray</div>
+        <div class="card-body">
+          <p class="card-text">
+            Lock in your look and keep your makeup fresh all day with a lightweight mist.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+        
+        
+<hr class="my-5" />
+<!-- haircare -->
+        <section id="skincare" class="mb-5">
+          <h2 class="section-heading">Skincare</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="facewash.jpg"
+                  class="card-img-top"
+                  alt="Project Alpha"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-primary-dark">Facewash</h5>
+                  <p class="card-text text-muted">
+                     Cleanse your skin gently with our refreshing, non-drying facewash.
+                    It removes dirt, oil, and impurities without stripping natural moisture.
+                  Infused with soothing botanicals for a calm, balanced complexion.
+                  Ideal for daily use, leaving your skin soft, clear, and energized.
+                   Enjoy a cooling sensation and a naturally radiant glow.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="moist.jpg"
+                  class="card-img-top"
+                  alt="Project Beta"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-primary-dark">Moisturizer</h5>
+                  <p class="card-text text-muted">
+                   Hydrate and protect your skin with our lightweight daily moisturizer.
+                   It absorbs quickly, delivering long-lasting softness and comfort.
+                   Enriched with vitamins and antioxidants to nourish deeply.
+                   Perfect for all skin types, including sensitive and dry skin.
+                   Leaves your face smooth, supple, and beautifully refreshed.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="face serum.jpg"
+                  class="card-img-top"
+                  alt="Project Gamma"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-primary-dark">Face Serum</h5>
+                  <p class="card-text text-muted">
+                 Revitalize your skin with our potent, fast-absorbing face serum.
+                 Targets dullness, fine lines, and uneven texture with active ingredients.
+                 Just a few drops deliver hydration and a youthful glow.
+                Ideal for morning or night routines to boost skin performance.
+                Experience visibly brighter, firmer, and healthier-looking skin.
+
+                 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-5" />
+       <!-- skincare -->
+        <section id="haircare" class="mb-5">
+          <h2 class="section-heading">Haircare</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="conditioner.jpg"
+                  class="card-img-top"
+                  alt="Project Alpha"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-primary-dark">Hair Conditioner</h5>
+                  <p class="card-text text-muted">
+                     Restore your hair’s softness with our rich, hydrating conditioner.
+               It smooths strands, reduces frizz, and makes detangling effortless.
+               Formulated with nourishing oils to strengthen from root to tip.
+               Ideal for dry or damaged hair needing extra care and protection.
+            Leaves your locks silky, manageable, and beautifully conditioned.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="shampoo.jpg"
+                  class="card-img-top"
+                  alt="Project Beta"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-primary-dark">Shampoo</h5>
+                  <p class="card-text text-muted">
+                  Refresh your hair with our deep-cleansing shampoo that gently removes buildup.
+                Infused with natural extracts, it revitalizes your scalp and boosts shine.
+                  Its lightweight formula leaves hair feeling soft, clean, and energized.
+                Perfect for daily use, it maintains balance without stripping moisture.
+                Enjoy a fresh fragrance that lingers long after your wash.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="hair serum.jpg"
+                  class="card-img-top"
+                  alt="Project Gamma"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-primary-dark">Hair Serum</h5>
+                  <p class="card-text text-muted">
+                      Tame flyaways and add instant shine with our lightweight hair serum.
+                     Designed to protect against heat and environmental stressors.
+                     Just a few drops smoothen texture and enhance natural gloss.
+                     Perfect for styling or finishing touches on any hair type.
+                     Experience sleek, polished hair that feels soft and looks radiant.
+                 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<!-- contact -->
+  <hr class="my-5" />
+
+        <section id="contact" class="mb-5">
+          <h2 class="section-heading">Contact Us</h2>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="
+                    background-color: var(--accent-bold);
+                    border-color: var(--accent-bold);
+                  "
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="text-center">
+      <div class="container">
+        <p>
+          &copy; 2025 Your Company. All rights reserved. | Designed with
+          <a href="#">Bootstrap</a>
+        </p>
+        <div class="social-icons">
+          <a href="#" class="text-white me-3"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+
+   
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

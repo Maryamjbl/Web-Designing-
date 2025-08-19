@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        h2{
+            color: rgb(26, 26, 132);
+            margin-top: 15px;
+        }
+     .box{
+        border: 1px solid black;
+        margin: 4px;
+        padding: 10px;
+        background-color: rgb(200, 234, 234);
+     }
+     .block{
+        display: block;
+        background-color: rgb(158, 243, 243);
+     }
+     .inline{
+        display: inline;
+        background-color: rgb(196, 146, 242);
+        padding: 10px;
+        margin: 4px;
+     }
+     .inline-block{
+        display: inline-block;
+        background-color: rgb(241, 196, 164);
+        padding: 10px;
+        margin: 4px;
+        width: 200px;
+     }
+    </style>
+</head>
+<body>
+    <h2>Display Properties</h2>
+    <h3>Block Element</h3>
+    <div class="box block">Block Element-1</div>
+    <div class="box block">Block Element-2</div>
+    <p>Takes Full Width and Start On a New Line</p>
+
+     <h3>Inline Element</h3>
+    <div class="box inline block">Block Element-1</div>
+    <div class="box inline block">Block Element-2</div>
+    <p>Takes Only Th Space Needed, Cannot Set Width and Height</p>
+
+     <h3>Inline-Block Element</h3>
+    <div class="box inline-block">Block Element-1</div>
+    <div class="box inline-block">Block Element-2</div>
+    <p>akes Only Th Space Needed,Can Set The Width and Height</p>
+
+</body>
+</html>
